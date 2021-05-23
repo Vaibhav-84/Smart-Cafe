@@ -1,0 +1,76 @@
+{% extends 'shop/basic.html' %}
+
+{% block title%} About Us{% endblock %}
+
+{% block css %}
+
+.button {
+  background-color: rgb(250, 182, 56);
+  border: transparent;
+}
+.button:hover {
+  background-color: rgb(236, 162, 22);
+}
+.jumbotron{
+  color: white;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://wallpaperaccess.com/full/866645.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+{% endblock %}
+
+
+{% block body %}
+
+<main class="main" role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">SMART CAFE!</h1>
+      <p>About Us
+Rozzi’s is the collaborative outcome of seasoned food & business operators who have combined their past 25 years’ industry experience to create this exciting dining offer.
+
+We believe in creating interesting and unique places to enjoy our simple and great tasting “Real Italian” food. Sometimes we pop up in shopping centres, sometimes in a great shopping strip. Either way we’ll make sure you feel like you’re in our home and ready for some of our great, simple food.
+
+If you love the Rozzi’s concept like we do and want to enquire about joining our “franchise famiglia”</p>
+      <p><a class="btn btn-primary btn-lg button" href="#" role="button">Learn more »</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Services</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary button" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Features</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary button" href="#" role="button">View details »</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Offers</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary button" href="#" role="button">View details »</a></p>
+      </div>
+    </div>
+
+    {% comment %} <hr> {% endcomment %}
+
+  </div> <!-- /container -->
+
+
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967526.7121164239!2d73.76746151411574!3d18.69084709586361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8a959a0e4b%3A0x9634475031078c60!2sJW%20Marriott%20Hotel%20Pune!5e0!3m2!1sen!2sin!4v1621767405293!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</main>
+
+
+
+
+
+{% endblock %}
