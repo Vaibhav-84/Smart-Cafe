@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="{% static 'shop/index.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>{% block title%} {% endblock %}</title>
      <style>
        {% block css %} {% endblock %}
@@ -53,6 +56,53 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   </div>
 </nav>
   {% block body %} {% endblock %}
+
+  <!--======= Footer ======= -->
+  <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>About Us Rozzi’s is the collaborative outcome of seasoned food & business operators who have combined their past 25 years’ industry experience to create this exciting dining offer.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+122323333</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Franchise</div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Hadapsar Pune</a></div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Bund Garden</a></div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Swarget   Pune</a></div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Nigadi    Pune</a></div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Pimpri    Pune</a></div>
+       <div><a href="https://goo.gl/maps/Qek1LYorRmWsz3Q57">Chinchwad Pune</a></div>
+     </div>
+     <div class="right box">
+       {% comment %} <div class="topic">Subscribe us</div> {% endcomment %}
+       <form action="./feedback">
+         {% comment %} <input type="text" placeholder="Enter email address"> {% endcomment %}
+         <input type="submit" name="" value="Feedback">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2020 <a href="#">Smart Cafe</a> All rights reserved</p>
+   </div>
+ </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
