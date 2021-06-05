@@ -1,6 +1,13 @@
 {% extends 'shop/basic.html' %}
 {% block title%} Smart Cafe{% endblock %}
 {% block css %}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+body{
+background: #FF3BEB;
+background: -webkit-linear-gradient(top left, #FF3BEB, #0198F1);
+background: -moz-linear-gradient(top left, #FF3BEB, #0198F1);
+background: linear-gradient(to bottom right, #FF3BEB, #0198F1);
+}
 .col-md-3
 {
 display: inline-block;
@@ -36,14 +43,28 @@ padding-right: 0;
 .card{
     border-radius: 10px;
     border: 1px solid black;
+    width: 100px;
+}
+.category{
+    font-size: 40px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: bold;
+    font-variant: proportional-width;
+    font-style: initial;
+    color: white;
+    text-align: center;
+}
+ nav{
+  background-color: #eb2f0647;
 }
 {% endblock %}
 {% block body %}
 {% load static %}
+<body>
 <div class="container">
     <!--Slideshow starts here -->
     {% for product, range, nSlides in allProds %}
-    <h5 class="my-4">{{product.0.category}}</h5>
+    <h5 class="my-4 category">{{product.0.category}}</h5>
     <div class="row">
         <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -87,6 +108,7 @@ padding-right: 0;
     </div>
     {% endfor %}
 </div>
+</body>
 {% endblock %}
 {% block js %}
 <script>
